@@ -1,0 +1,478 @@
+/* ===== Pagina Convenzioni ===== */
+:root {
+    --fs-h3: clamp(20px, 2.3vw, 27px);
+    /* dimensione di "Bellamio Calzature & Sport" */
+    --fs-h2: calc((var(--fs-h1) + var(--fs-h3)) / 2);
+    /* esattamente a metà */
+}
+
+.conv-rental {
+    padding-block: 63px;
+    /* era 94px */
+}
+
+.conv-band {
+    background: var(--ice);
+}
+
+.conv-lead {
+    max-width: 640px;
+    margin: 14px 0 0;
+    font-size: 18px;
+    color: var(--muted);
+}
+
+.conv-note {
+    margin-top: 44px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* ---------- Noleggio e attrezzatura: stella con il logo ---------- */
+
+.rental {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    margin-top: 32px;
+}
+
+.star-badge {
+    position: relative;
+    flex: 0 0 173px;
+    width: 173px;
+    height: 173px;
+}
+
+.star-badge-shape {
+    position: absolute;
+    background: var(--orange);
+    inset: 0;
+    clip-path: polygon(50.0% 0.0%,
+            54.8% 7.8%,
+            61.1% 1.3%,
+            64.0% 9.9%,
+            71.7% 5.0%,
+            72.6% 14.0%,
+            81.2% 10.9%,
+            80.1% 19.9%,
+            89.1% 18.8%,
+            86.0% 27.4%,
+            95.0% 28.3%,
+            90.1% 36.0%,
+            98.7% 38.9%,
+            92.2% 45.2%,
+            100.0% 50.0%,
+            92.2% 54.8%,
+            98.7% 61.1%,
+            90.1% 64.0%,
+            95.0% 71.7%,
+            86.0% 72.6%,
+            89.1% 81.2%,
+            80.1% 80.1%,
+            81.2% 89.1%,
+            72.6% 86.0%,
+            71.7% 95.0%,
+            64.0% 90.1%,
+            61.1% 98.7%,
+            54.8% 92.2%,
+            50.0% 100.0%,
+            45.2% 92.2%,
+            38.9% 98.7%,
+            36.0% 90.1%,
+            28.3% 95.0%,
+            27.4% 86.0%,
+            18.8% 89.1%,
+            19.9% 80.1%,
+            10.9% 81.2%,
+            14.0% 72.6%,
+            5.0% 71.7%,
+            9.9% 64.0%,
+            1.3% 61.1%,
+            7.8% 54.8%,
+            0.0% 50.0%,
+            7.8% 45.2%,
+            1.3% 38.9%,
+            9.9% 36.0%,
+            5.0% 28.3%,
+            14.0% 27.4%,
+            10.9% 18.8%,
+            19.9% 19.9%,
+            18.8% 10.9%,
+            27.4% 14.0%,
+            28.3% 5.0%,
+            36.0% 9.9%,
+            38.9% 1.3%,
+            45.2% 7.8%);
+    transition: transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+
+.star-badge:hover .star-badge-shape {
+    transform: rotate(24deg) scale(1.04);
+}
+
+.star-badge-inner {
+    position: absolute;
+    inset: 14%;
+    display: grid;
+    place-items: center;
+    padding: 6%;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.star-badge-inner img {
+    width: 85%;
+    /* misura del logo dentro il cerchio */
+    height: 85%;
+    object-fit: contain;
+    /* il logo non viene deformato né tagliato */
+}
+
+/* Se il logo non c'è ancora, si vede il nome del negozio */
+.star-badge-name {
+    display: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--navy);
+}
+
+.star-badge-name small {
+    display: block;
+    margin-top: 4px;
+    font-size: 6px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.star-badge.no-logo img {
+    display: none;
+}
+
+.star-badge.no-logo .star-badge-name {
+    display: block;
+}
+
+.rental-offers {
+    flex: 1;
+}
+
+.rental-intro {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.rental-offers h3 {
+    margin: 0 0 16px;
+    font-size: var(--fs-h3);
+    letter-spacing: -.03em;
+}
+
+.rental-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rental-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 28px;
+    padding: 18px 0;
+    border-top: 1px solid #dfe6eb;
+    align-items: center;
+}
+
+.rental-list li:last-child {
+    border-bottom: 1px solid #dfe6eb;
+}
+
+.rental-list strong {
+    flex: 0 0 150px;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: .9;
+    color: var(--orange);
+}
+
+.rental-list span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--navy);
+}
+
+/* ---------- Skipass: card con le cime ---------- */
+
+.ski-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 28px;
+    margin-top: 56px;
+}
+
+.peak-card {
+    --card-bg: #14283f;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 79px;
+    filter: drop-shadow(0 14px 20px rgba(16, 31, 50, .2));
+    transition: transform .35s cubic-bezier(.2, .7, .2, 1), filter .35s ease;
+}
+
+.peak-card:hover {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 22px 28px rgba(16, 31, 50, .3));
+}
+
+.peak-card.is-wide {
+    grid-column: span 2;
+}
+
+.peaks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
+.peaks-rock {
+    fill: var(--card-bg);
+}
+
+.peaks-snow {
+    fill: #dcebf6;
+}
+
+.peak-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: -1px;
+    padding: 8px 28px 28px;
+    border-radius: 0 0 22px 22px;
+    background: var(--card-bg);
+    color: #fff;
+}
+
+.peak-kicker {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .2em;
+    color: var(--blue);
+}
+
+.peak-card h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.05;
+    letter-spacing: -.03em;
+}
+
+.peak-deal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+}
+
+.peak-deal strong {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: .9;
+    color: var(--orange);
+}
+
+.peak-deal span {
+    font-weight: 700;
+    color: #e8eff4;
+}
+
+.peak-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #cfdbe5;
+}
+
+.peak-text a,
+.peak-link {
+    color: var(--orange);
+    font-weight: 800;
+    word-break: break-word;
+}
+
+.peak-text a:hover {
+    text-decoration: underline;
+}
+
+.peak-list {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #cfdbe5;
+}
+
+.peak-list li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.peak-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+}
+
+.peak-prices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.peak-price {
+    padding: 14px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .07);
+    text-align: center;
+}
+
+.peak-price strong {
+    display: block;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--orange);
+}
+
+.peak-price span {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #cfdbe5;
+}
+
+.peak-excluded {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px dashed rgba(255, 255, 255, .28);
+    font-size: 13px;
+    line-height: 1.5;
+    color: #b3c3d1;
+}
+
+.peak-excluded b {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.peak-excluded ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.peak-soon {
+    opacity: .85;
+    font-style: italic;
+}
+
+@media (max-width: 1000px) {
+    .ski-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .peak-card.is-wide {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 800px) {
+    .rental {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+    }
+
+    .star-badge {
+        flex-basis: auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .rental-list strong {
+        flex-basis: 60px;
+        font-size: 32px;
+        flex-basis: 90px;
+        font-size: 44px;
+    }
+
+    .rental-list span {
+        font-size: 14px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .ski-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .peak-prices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .peak-card,
+    .star-badge-shape {
+        transition: none;
+    }
+
+    .peak-card:hover {
+        transform: none;
+    }
+
+    .star-badge:hover .star-badge-shape {
+        transform: none;
+    }
+}
+
+
+.conv-rental h2,
+.conv-band h2 {
+    font-size: var(--fs-h2);
+    line-height: 1.05;
+    letter-spacing: -.04em;
+    margin: 0;
+}
+#noleggio,
+#skipass {
+    scroll-margin-top: 70px;
+}

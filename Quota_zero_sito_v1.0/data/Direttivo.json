@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "Stefano Visentin",
+    "descrizione": "Presidente",
+    "foto": "assets/direttivo/Stefano.jpg"
+  },
+    {
+    "nome": "Jacopo Pellizzari",
+    "descrizione": "Vice-Presidente",
+    "foto": "assets/direttivo/Jacopo.jpg"
+  }
+]

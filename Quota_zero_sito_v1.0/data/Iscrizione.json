@@ -1,0 +1,16 @@
+[
+  {
+    "etichetta": "Adulto",
+    "titolo": "Quota associativa stagionale",
+    "prezzo": "50 €",
+    "nota": "**Assicurazione inclusa.** La quota comprende la copertura di responsabilità civile (RC) stagionale prevista dal tesseramento FISI, obbligatoria per sciare sulle piste.",
+    "immagine": ""
+  },
+  {
+    "etichetta": "Under 10",
+    "titolo": "Quota associativa stagionale",
+    "prezzo": "30 €",
+    "nota": "**Assicurazione inclusa.** La quota comprende la copertura di responsabilità civile (RC) stagionale prevista dal tesseramento FISI, obbligatoria per sciare sulle piste.",
+    "immagine": ""
+  }
+]

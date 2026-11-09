@@ -1,0 +1,244 @@
+/* ===== Pagina Diventa socio: card delle quote ===== */
+
+/* Le due colonne hanno la stessa altezza: la base delle card coincide con la base del riquadro grigio */
+.page-top .two-col {
+    align-items: start;
+}
+
+.quote-col {
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+}
+
+.quote-col h2 {
+    margin-bottom: 24px;
+}
+
+.quote-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.quote-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 340px;
+    padding: 26px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    color: #fff;
+    background-color: #14283f;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(255, 118, 46, .3);
+    transition: transform .35s cubic-bezier(.2, .7, .2, 1),
+        box-shadow .35s ease,
+        border-color .35s ease;
+    
+}
+
+.quote-card:nth-child(odd),
+.quote-card:nth-child(even) {
+    /*background-image: linear-gradient(160deg, #2c5878, #14283f);*/
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid #d5dde4;
+    color: var(--navy);
+}
+
+/* Velo scuro, come nelle card delle attività */
+.quote-card::before {
+    content: "";
+    position: absolute;
+    display: none;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(9, 27, 43, .75), rgba(9, 27, 43, .15) 70%);
+}
+
+.quote-card>* {
+    position: relative;
+}
+
+/* Unico effetto al passaggio del mouse: la card si ingrandisce */
+.quote-card:hover {
+    transform: scale(1.04);
+    z-index: 2;
+    border-color: var(--orange);
+    box-shadow: 0 0 24px rgba(255, 118, 46, .45);
+}
+
+.quote-tag {
+    align-self: flex-end;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--orange);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.quote-main {
+    margin-top: auto;
+}
+
+.quote-price {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 84px;
+    font-weight: 800;
+    line-height: .9;
+    color: var(--orange);
+}
+
+.quote-card h3 {
+    margin: 10px 0 14px;
+    font-size: 22px;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    color: var(--navy);
+}
+
+.quote-list {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    /* color: #e8eff4;*/
+    color: var(--navy);
+}
+
+.quote-list li {
+    position: relative;
+    padding-left: 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.quote-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .55em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+}
+
+.quote-card .quote-note {
+    margin: 0;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(255, 255, 255, .3);
+    font-size: 12.5px;
+    line-height: 1.45;
+    /* color: #cfdbe5;*/
+    color: var(--muted);
+    border-top-color: #d5dde4;
+}
+
+@media (max-width: 560px) {
+    .quote-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quote-card {
+        transition: none;
+    }
+
+    .quote-card:hover {
+        transform: none;
+    }
+}
+.quote-list li strong {
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.why-join { margin-bottom: 26px; }
+
+.why-join h3 {
+    margin: 0 0 14px;
+    font-size: 13px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.why-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.why-list li {
+    position: relative;
+    margin: 0;
+    padding-left: 34px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.why-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.why-list a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: color .25s ease;
+}
+
+.why-list a:hover { color: var(--orange); }
+.why-arrow {
+    width: .8em;
+    height: .8em;
+    margin-left: 6px;
+}
+
+/* Card delle quote centrate sotto le due colonne */
+.quote-grid.quote-grid-center {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+/* Riquadro grigio: stessa altezza dell'elenco, contenuto centrato */
+.page-top .form-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* il bottone torna alla sua larghezza normale */
+    justify-content: center;
+    padding-block: 5px;
+}
