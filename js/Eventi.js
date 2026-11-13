@@ -33,7 +33,7 @@
         else if (STATI[stato]) badge = '<span class="event-badge ' + esc(stato) + '">' + STATI[stato] + '</span>';
 
         var img = e.locandina
-            ? '<img src="../' + esc(e.locandina) + '" alt="' + esc(e.titolo) + '" loading="lazy" onerror="this.closest(\'.event-card\').classList.add(\'no-image\')">'
+            ? '<img src="' + esc(e.locandina) + '" alt="' + esc(e.titolo) + '" loading="lazy" onerror="this.closest(\'.event-card\').classList.add(\'no-image\')">'
             : '';
 
         return '<' + tag + ' class="' + cls + '"' + attrs + '>' +
