@@ -1,4 +1,4 @@
-// Pagina Convenzioni: legge data/convenzioni.json e crea la stella del negozio e le card degli skipass
+// Pagina Convenzioni: legge data/Convenzioni.json e crea la stella del negozio e le card degli skipass
 (function () {
   function esc(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
@@ -83,7 +83,7 @@
     return h + '</div>' + riquadro50(c) + '</article>';
   }
 
-  fetch('../data/convenzioni.json')
+  fetch('../data/Convenzioni.json')
     .then(function (r) { if (!r.ok) throw new Error('dati non disponibili'); return r.json(); })
     .then(function (d) {
       document.getElementById('rental').innerHTML = rental(d.noleggio);

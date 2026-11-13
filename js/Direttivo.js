@@ -1,4 +1,4 @@
-// Pagina Chi siamo: legge data/direttivo.json e crea i cerchi con le foto del direttivo
+// Pagina Chi siamo: legge data/Direttivo.json e crea i cerchi con le foto del direttivo
 (function () {
     var box = document.getElementById('direttivo');
     if (!box) return;
@@ -42,7 +42,7 @@
         p.style.setProperty('--r', p._n);
         setTimeout(function () { p._busy = false; }, 1400);
     });
-    fetch('../data/direttivo.json')
+    fetch('../data/Direttivo.json')
         .then(function (r) { if (!r.ok) throw new Error('dati non disponibili'); return r.json(); })
         .then(function (items) { box.innerHTML = items.map(membro).join(''); })
         .catch(function () { box.innerHTML = ''; });

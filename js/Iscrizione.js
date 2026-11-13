@@ -1,4 +1,4 @@
-// Pagina Diventa socio: legge data/iscrizione.json e crea le card delle quote
+// Pagina Diventa socio: legge data/Iscrizione.json e crea le card delle quote
 (function () {
   var grid = document.getElementById('quote-grid');
   if (!grid) return;
@@ -25,7 +25,7 @@
       '</article>';
   }
 
-  fetch('../data/iscrizione.json')
+  fetch('../data/Iscrizione.json')
     .then(function (r) { if (!r.ok) throw new Error('dati non disponibili'); return r.json(); })
     .then(function (items) {
       grid.innerHTML = items.map(card).join('');

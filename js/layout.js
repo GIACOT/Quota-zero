@@ -68,6 +68,6 @@
     if (footerSlot) footerSlot.outerHTML = footer;
   });
   var consenso = document.createElement('script');
-  consenso.src = root + 'js/consenso.js';
+  consenso.src = root + 'js/Consenso.js';
   document.head.appendChild(consenso);
 })();

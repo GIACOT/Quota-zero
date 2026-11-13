@@ -1,4 +1,4 @@
-// Pagina Eventi: legge data/eventi.json e crea una card per ogni locandina
+// Pagina Eventi: legge data/Eventi.json e crea una card per ogni locandina
 (function () {
     var grid = document.getElementById('eventi-grid');
     if (!grid) return;
@@ -44,7 +44,7 @@
             '</' + tag + '>';
     }
 
-    fetch('../data/eventi.json')
+    fetch('../data/Eventi.json')
         .then(function (r) { if (!r.ok) throw new Error('dati non disponibili'); return r.json(); })
         .then(function (items) {
             items.forEach(function (e) { e._passato = !!e.data && e.data < oggi; });
