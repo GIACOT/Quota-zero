@@ -3,21 +3,21 @@
 {
   "titolo": "Folgaria",
   "data": "2026-12-13",
-  "locandina": "assets/locandine/Folgaria.jpeg",
+  "locandina": "../assets/locandine/Folgaria.jpeg",
   "link": "https://docs.google.com/forms/d/1Y-tRCHidwP0BQZtqUOaHBC5SDEAaQNUxTKXfV18Tbt4/edit?usp=drive_web&ouid=106112454223207217415",
   "stato": "iscrizioni-aperte"
 },
 {
   "titolo": "San Pellegrino",
   "data": "2027-01-17",
-  "locandina": "assets/locandine/Pellegrino.jpeg",
+  "locandina": "../assets/locandine/Pellegrino.jpeg",
   "link": "https://docs.google.com/forms/d/1lCBr30b5r4Yk7vaMJM-Lmz6tEMjqlWtO_54Z8Zq1zhU/edit?usp=forms_home&ouid=106112454223207217415&ths=true",
   "stato": "prossimamente"
 },
 {
   "titolo": "Fai della Paganella",
   "data": "2027-02-21",
-  "locandina": "assets/locandine/Paganella.jpeg",
+  "locandina": "../assets/locandine/Paganella.jpeg",
   "link": "https://docs.google.com/forms/d/1ahH5QuIK209xiWJ-xw_g5yUY8yN2DcFdwmsTvxFEDJQ/edit?usp=forms_home&ouid=106112454223207217415&ths=true",
   "stato": "prossimamente"
 }

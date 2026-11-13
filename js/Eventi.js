@@ -44,7 +44,7 @@
             '</' + tag + '>';
     }
 
-    fetch('../data/Eventi.json')
+    fetch('../data/eventi.json')
         .then(function (r) { if (!r.ok) throw new Error('dati non disponibili'); return r.json(); })
         .then(function (items) {
             items.forEach(function (e) { e._passato = !!e.data && e.data < oggi; });
