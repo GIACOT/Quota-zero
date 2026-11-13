@@ -14,7 +14,7 @@
     '<a href="' + root + 'pages/attivita.html">Attività</a>' +
     '<a href="' + root + 'pages/eventi.html">Eventi</a>' +
     '<a href="' + root + 'pages/sponsor.html">Convenzioni</a>' +
-    '<a href="' + root + 'pages/faq.html">FAQ</a>' +
+    '<a href="' + root + 'pages/Faq.html">FAQ</a>' +
     '<a class="nav-cta" href="' + root + 'pages/diventa-socio.html">Iscriviti</a>' +
     '</nav>' +
     '</header>';
