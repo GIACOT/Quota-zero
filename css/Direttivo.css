@@ -1,0 +1,90 @@
+/* ===== Chi siamo: il direttivo ===== */
+
+.direttivo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 56px;
+    margin-top: 36px;
+}
+
+.dir-member {
+    width: 240px;
+    text-align: center;
+}
+
+.dir-photo {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.dir-rings {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dir-rings circle {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.ring-outer { stroke: var(--orange); }
+.ring-inner { stroke: var(--navy); }
+
+.dir-img {
+    position: absolute;
+    inset: 14%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #e8edf1;
+}
+
+.dir-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Se la foto non c'è ancora, si vedono le iniziali */
+.dir-initials {
+    display: none;
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.dir-photo.no-photo .dir-initials { display: block; }
+.dir-photo.no-photo img { display: none; }
+
+.dir-member h3 {
+    margin: 18px 0 6px;
+    font-size: 22px;
+    letter-spacing: -.02em;
+}
+
+.dir-member p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+@media (max-width: 560px) {
+    .direttivo { gap: 32px; justify-content: center; }
+    .dir-member { width: 200px; }
+    .dir-photo { width: 200px; height: 200px; }
+}
+.dir-rings circle {
+    transform-origin: 120px 120px;
+    transition: transform 1.4s cubic-bezier(.2, .7, .2, 1);
+}
+
+.ring-outer { transform: rotate(calc(-5deg + var(--r, 0) * 360deg)); }
+.ring-inner { transform: rotate(calc(175deg - var(--r, 0) * 360deg)); }

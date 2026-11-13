@@ -1,0 +1,278 @@
+{
+  "noleggio": {
+    "shop": "Bellamio Calzature & Sport",
+    "logo": "assets/img/bellamio-logo.jpg",
+    "items": [
+      {
+        "value": "20%",
+        "label": "Noleggio sci e attrezzature"
+      },
+      {
+        "value": "20%",
+        "label": "Riparazioni"
+      },
+      {
+        "value": "30%",
+        "label": "Attrezzatura e abbigliamento (nuovo)"
+      }
+    ]
+  },
+  "skipass": [
+    {
+      "name": "Folgaria",
+      "kicker": "SKIPASS GIORNALIERO · SOLO ONLINE",
+      "wide": true,
+      "prices": [
+        {
+          "value": "49 €",
+          "label": "Adulto"
+        },
+        {
+          "value": "35 €",
+          "label": "Ragazzo"
+        },
+        {
+          "value": "22 €",
+          "label": "Bambini"
+        },
+        {
+          "value": "Gratis",
+          "label": "Bambini accompagnati da familiare pagante"
+        }
+      ],
+      "notes": [
+        "Bambino: nati negli anni 2019-2026",
+        "Ragazzo: nati negli anni 2009-2018"
+      ],
+      "how": {
+        "text": "Ogni tesserato, inviando una richiesta a",
+        "email": "quotazero.info@gmail.com",
+        "text2": "riceve un codice sconto per acquistare gli skipass giornalieri su",
+        "url": "https://www.alpecimbra.it/skipassonline",
+        "urlLabel": "www.alpecimbra.it/skipassonline"
+      },
+      "excluded": [
+        "Promozione non valida durante il periodo di Natale-Capodanno (19/12/2026 – 06/01/2027)"
+      ],
+      "sconto50": ["15 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+        {
+      "name": "Paganella",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sullo skipass giornaliero"
+      },
+      "text": "Presentati singolarmente alle casse con la tessera aggiornata alla stagione 2026/2027.",
+      "notes": [
+        "Junior: nati dopo il 01/01/2009, con documento",
+        "Bambino: nati dopo il 01/01/2019, con documento; gratis con adulto pagante"
+      ],
+      "excluded": [
+        "Dal 19/12/2026 al 10/01/2027"
+      ],
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+        {
+      "name": "Lavarone",
+      "kicker": "SKIPASS GIORNALIERO",
+      "wide": true,
+      "prices": [
+        {
+          "value": "40 €",
+          "label": "Adulto"
+        },
+        {
+          "value": "29 €",
+          "label": "Junior"
+        },
+        {
+          "value": "21 €",
+          "label": "Bambino"
+        },
+        {
+          "value": "41 €",
+          "label": "1 adulto + 1 bambino"
+        }
+      ],
+      "text": "Basterà presntare alle casse la tessera dello sci club aggiornata al corrente anno di attività.",
+      "notes": [
+        "Junior: nati dopo il 01/01/2009, con documento",
+        "Bambino: nati dopo il 01/01/2019, con documento; gratuito con adulto pagante"
+      ],
+      "excluded": [
+        "Promozione non valida durante il periodo di Natale-Capodanno (19/12/2026 – 06/01/2027)"
+      ],
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+    {
+      "name": "Madonna di Campiglio",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sui giornalieri Skiarea"
+      },
+      "text": "Stagione invernale 2026/2027, riservato ai tesserati FISI.",
+      "excluded": [
+        "Dal 5 all'8 dicembre 2026",
+        "Dal 20 dicembre 2026 al 6 gennaio 2027",
+        "Dal 7 al 20 febbraio 2027"
+      ],
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+    {
+      "name": "Funivie Pinzolo",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sui giornalieri"
+      },
+      "text": "Stagione invernale 2026/2027, riservato ai tesserati FISI.",
+      "excluded": [
+        "Dal 5 all'8 dicembre 2026",
+        "Dal 20 dicembre 2026 al 6 gennaio 2027",
+        "Dal 7 al 20 febbraio 2027"
+      ],
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+    {
+      "name": "Ski Monte Bondone",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sui giornalieri"
+      },
+      "text": "Stagione invernale 2026/2027, riservato ai tesserati FISI.",
+      "excluded": [
+        "Dal 5 all'8 dicembre 2026",
+        "Dal 20 dicembre 2026 al 6 gennaio 2027",
+        "Dal 7 al 20 febbraio 2027"
+      ],
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+    {
+      "name": "Folgarida Marilleva",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sui giornalieri"
+      },
+      "text": "Validi i giornalieri «Folgarida Marilleva» e «Skiarea Madonna di Campiglio Dolomiti di Brenta», dall'apertura (03/12/2026) alla chiusura (04/04/2027).",
+      "excluded": [
+        "Immacolata: dal 5 all'8 dicembre 2026",
+        "Natale e Capodanno: dal 20/12/2026 al 06/01/2027",
+        "Carnevale: dal 7 al 20 febbraio 2027"
+      ]
+    },
+    {
+      "name": "Ski Passion Livigno",
+      "kicker": "BIGLIETTO GIORNALIERO",
+      "deal": {
+        "value": "-5 €",
+        "label": "sul biglietto giornaliero"
+      },
+      "text": "Sconto riservato ai possessori di tessera FISI da domenica a venerdì.",
+      "sconto50": ["28 Nov", "29 Nov", "16 Gen", "17 Gen", "04 Apr"]
+        },
+    {
+      "name": "Bormio",
+      "kicker": "SKIPASS GIORNALIERO",
+      "deal": {
+        "value": "-10%",
+        "label": "sul giornaliero Bormio"
+      },
+      "text": "Valido dal 09/01/2027 all'11/04/2027.",
+      "sconto50": ["11 Dic", "18 Dic", "15 Gen", "22 Gen", "02 Apr"]
+    },
+    {
+      "name": "Dolomiti SuperSki",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["15 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Arabba",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "San Martino di Castrozza",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Ski Civetta",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Folgarida Marilleva",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["12 Dic", "19 Dic", "09 Gen", "16 Gen", "20 Mar"]
+    },
+    {
+      "name": "Merano 2000",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "16 Gen", "29 Gen", "02 Feb", "19 Mar"]
+    },
+    {
+      "name": "Cortina Ski World",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Kronplatz",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Alta Badia",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Val di Fiemme - Obereggen",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Val Gardena",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Val di Fassa",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Carezza Dolomites",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "3 Zinnen",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Plose Brixen Dolomites",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["18 Dic", "21 Dic", "15 Gen", "19 Gen", "13 Mar"]
+    },
+    {
+      "name": "Courmayeur",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["13 Dic", "20 Dic", "10 Gen", "07 Mar", "21 Mar"]
+    },
+    {
+      "name": "Cervino Ski Paradise",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["13 Dic", "20 Dic", "10 Gen", "07 Mar", "21 Mar"]
+    },
+    {
+      "name": "Monterosa Ski",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": ["13 Dic", "20 Dic", "10 Gen", "07 Mar", "21 Mar"]
+    }
+  ]
+}
