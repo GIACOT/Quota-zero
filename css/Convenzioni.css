@@ -181,7 +181,6 @@
 
 .rental-list li {
     display: flex;
-    align-items: baseline;
     gap: 28px;
     padding: 18px 0;
     border-top: 1px solid #dfe6eb;
@@ -427,14 +426,11 @@
     }
 
     .rental-list strong {
-        flex-basis: 60px;
-        font-size: 32px;
         flex-basis: 90px;
         font-size: 44px;
     }
 
     .rental-list span {
-        font-size: 14px;
         font-size: 18px;
     }
 }
