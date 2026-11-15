@@ -1,6 +1,6 @@
 // Banner dei cookie + Google Analytics (si attiva SOLO dopo il consenso)
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX';          // <-- metti qui il tuo ID di misurazione di Google Analytics
+  var GA_ID = 'G-NWLXWFGLK3';          // <-- metti qui il tuo ID di misurazione di Google Analytics
   var KEY = 'qz-consenso';
   var SEI_MESI = 1000 * 60 * 60 * 24 * 182;
   var base = document.currentScript.src.replace(/js\/consenso\.js.*$/, '');
