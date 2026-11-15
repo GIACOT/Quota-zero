@@ -21,10 +21,6 @@
         '<circle class="ring-inner" cx="120" cy="120" r="100" stroke-dasharray="490.1 138.2" transform="rotate(175 120 120)"/>' +
         '</svg>';
 
-    var ICONA_IG =
-        '<span class="dir-ig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
-        '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>';
-
     function membro(m) {
         var foto = m.foto
             ? '<img src="../' + esc(m.foto) + '" alt="' + esc(m.nome) + '" loading="lazy" onerror="this.closest(\'.dir-photo\').classList.add(\'no-photo\')">'
