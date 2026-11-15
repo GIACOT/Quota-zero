@@ -21,14 +21,16 @@
     }).join('');
     var shopShort = esc(r.shop.split(' ')[0]);
     var shopRest = esc(r.shop.split(' ').slice(1).join(' '));
-    return '<div class="rental">' +
+    var apri = r.link ? '<a class="star-link" href="' + esc(r.link) + '" target="_blank" rel="noopener" aria-label="Pagina Facebook di ' + esc(r.shop) + '">' : '';
+    var chiudi = r.link ? '</a>' : '';
+     return '<div class="rental">' + apri +
       '<div class="star-badge" role="img" aria-label="' + esc(r.shop) + '">' +
       '<div class="star-badge-shape"></div>' +
       '<div class="star-badge-inner">' +
       '<img src="../' + esc(r.logo) + '" alt="" onerror="this.closest(\'.star-badge\').classList.add(\'no-logo\')">' +
       '<span class="star-badge-name">' + shopShort + '<small>' + shopRest + '</small></span>' +
       '</div>' +
-      '</div>' +
+      '</div>' + chiudi +
       '<div class="rental-offers">' +
       '<p class="rental-intro">In collaborazione con</p>' +
       '<h3>' + esc(r.shop) + '</h3>' +

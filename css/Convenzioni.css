@@ -554,3 +554,14 @@
 .conv-note a:hover {
     color: var(--orange);
 }
+
+.star-link {
+    display: block;
+    flex: 0 0 auto;
+}
+
+.star-link:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 8px;
+    border-radius: 50%;
+}
