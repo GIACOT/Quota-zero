@@ -2,11 +2,13 @@
   {
     "nome": "Stefano Visentin",
     "descrizione": "Presidente",
-    "foto": "assets/direttivo/Stefano.jpg"
+    "foto": "assets/direttivo/Stefano.jpg",
+    "instagram": "https://www.instagram.com/stefano.visentin/"
   },
     {
     "nome": "Jacopo Pellizzari",
     "descrizione": "Vice-Presidente",
-    "foto": "assets/direttivo/Jacopo.jpg"
+    "foto": "assets/direttivo/Jacopo.jpg",
+    "instagram": "https://www.instagram.com/jacio_92/"
   }
 ]

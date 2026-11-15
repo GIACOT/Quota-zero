@@ -21,15 +21,24 @@
         '<circle class="ring-inner" cx="120" cy="120" r="100" stroke-dasharray="490.1 138.2" transform="rotate(175 120 120)"/>' +
         '</svg>';
 
+    var ICONA_IG =
+        '<span class="dir-ig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+        '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>';
+
     function membro(m) {
         var foto = m.foto
             ? '<img src="../' + esc(m.foto) + '" alt="' + esc(m.nome) + '" loading="lazy" onerror="this.closest(\'.dir-photo\').classList.add(\'no-photo\')">'
             : '';
-        return '<article class="dir-member">' +
+        var apri = m.instagram
+            ? '<a class="dir-link" href="' + esc(m.instagram) + '" target="_blank" rel="noopener" aria-label="Instagram di ' + esc(m.nome) + '">'
+            : '';
+        var chiudi = m.instagram ? '</a>' : '';
+        return '<article class="dir-member">' + apri +
             '<div class="dir-photo' + (m.foto ? '' : ' no-photo') + '">' +
             ANELLI +
             '<div class="dir-img">' + foto + '<span class="dir-initials">' + esc(iniziali(m.nome)) + '</span></div>' +
-            '</div>' +
+            (m.instagram ? ICONA_IG : '') +
+            '</div>' + chiudi +
             '<h3>' + esc(m.nome) + '</h3>' +
             '<p>' + esc(m.descrizione) + '</p>' +
             '</article>';
