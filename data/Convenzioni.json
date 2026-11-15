@@ -15,7 +15,6 @@
         "value": "30%",
         "label": "Attrezzatura e abbigliamento (nuovo)"
       }
-      
     ],
     "link": "https://www.facebook.com/bellamiocalzatureesport/?locale=it_IT"
   },
@@ -57,11 +56,11 @@
         "Promozione non valida durante il periodo di Natale-Capodanno (19/12/2026 – 06/01/2027)"
       ],
       "sconto50": [
-        "15 Dic",
-        "21 Dic",
-        "15 Gen",
-        "19 Gen",
-        "13 Mar"
+        "12 Dic",
+        "19 Dic",
+        "09 Gen",
+        "16 Gen",
+        "20 Mar"
       ]
     },
     {
@@ -225,24 +224,30 @@
     {
       "name": "Bormio",
       "kicker": "SKIPASS GIORNALIERO",
-      "deal": {
-        "value": "-10%",
-        "label": "sul giornaliero Bormio"
-      },
-      "text": "Valido dal 09/01/2027 all'11/04/2027.",
       "sconto50": [
         "11 Dic",
+        "12 Dic",
         "18 Dic",
-        "15 Gen",
-        "22 Gen",
-        "02 Apr"
+        "09 Gen",
+        "16 Gen"
       ]
     },
     {
       "name": "Dolomiti SuperSki",
       "kicker": "SKIPASS GIORNALIERO",
       "sconto50": [
-        "15 Dic",
+        "18 Dic",
+        "21 Dic",
+        "15 Gen",
+        "19 Gen",
+        "13 Mar"
+      ]
+    },
+    {
+      "name": "Alpe Lusia - San Pellegrino",
+      "kicker": "SKIPASS GIORNALIERO",
+      "sconto50": [
+        "18 Dic",
         "21 Dic",
         "15 Gen",
         "19 Gen",
