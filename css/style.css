@@ -1926,15 +1926,15 @@ h2 em {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 28px 56px;
+    gap: 60px 100px;
     min-height: 120px;
 }
 
 .sponsor-logos img {
     display: block;
     width: auto;
-    max-width: 180px;
-    max-height: 64px;
+    max-width: 320px;
+    max-height: 130px;
     object-fit: contain;
 }
 
