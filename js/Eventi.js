@@ -9,7 +9,8 @@
         'sold-out': 'Sold out',
         'soldout': 'Sold out',
         'iscrizioni-aperte': 'Iscrizioni aperte',
-        'prossimamente': 'Prossimamente'
+        'prossimamente': 'Prossimamente',
+        'venerdi': 'Da Venerdì'
     };
 
     // Data di oggi nel formato AAAA-MM-GG, per capire quali eventi sono passati
@@ -24,10 +25,10 @@
     function card(e) {
         var passato = e._passato;
         var stato = String(e.stato || '').toLowerCase().replace(/[\s_]+/g, '-');
-        var attivo = e.link && !passato && ['sold-out', 'soldout', 'prossimamente'].indexOf(stato) === -1;
+        var attivo = e.link && !passato && ['sold-out', 'soldout', 'prossimamente', 'venerdi'].indexOf(stato) === -1;
         var tag = attivo ? 'a' : 'div';
         var attrs = attivo ? ' href="' + esc(e.link) + '" target="_blank" rel="noopener"' : '';
-        var cls = 'event-card' + (passato ? ' is-past' : '') + (stato === 'prossimamente' && !passato ? ' is-soon' : '') + (attivo ? ' has-link' : '') + (e.locandina ? '' : ' no-image');
+        var cls = 'event-card' + (passato ? ' is-past' : '') + (stato === 'prossimamente' && stato === 'venerdi' && !passato ? ' is-soon' : '') + (attivo ? ' has-link' : '') + (e.locandina ? '' : ' no-image');
         var badge = '';
         if (passato) badge = '<span class="event-badge is-past">Concluso</span>';
         else if (STATI[stato]) badge = '<span class="event-badge ' + esc(stato) + '">' + STATI[stato] + '</span>';

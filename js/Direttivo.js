@@ -37,7 +37,6 @@
             '<div class="dir-photo' + (m.foto ? '' : ' no-photo') + '">' +
             ANELLI +
             '<div class="dir-img">' + foto + '<span class="dir-initials">' + esc(iniziali(m.nome)) + '</span></div>' +
-            (m.instagram ? ICONA_IG : '') +
             '</div>' + chiudi +
             '<h3>' + esc(m.nome) + '</h3>' +
             '<p>' + esc(m.descrizione) + '</p>' +

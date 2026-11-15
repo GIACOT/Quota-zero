@@ -170,6 +170,10 @@
     background: var(--blue);
     color: var(--navy);
 }
+.event-badge.venerdi {
+    background: var(--blue);
+    color: var(--navy);
+}
 .event-skeleton {
     aspect-ratio: 9 / 16;
     border-radius: var(--radius);
