@@ -1,3 +1,52 @@
+/* Caratteri ospitati sul sito (Manrope e Barlow Condensed, licenza SIL Open Font License) */
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url('../assets/fonts/manrope-latin-wght-normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../assets/fonts/barlow-condensed-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../assets/fonts/barlow-condensed-latin-600-normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../assets/fonts/barlow-condensed-latin-700-normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../assets/fonts/barlow-condensed-latin-800-normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../assets/fonts/barlow-condensed-latin-900-normal.woff2') format('woff2');
+}
+
 :root {
     --navy: #101f32;
     --blue: #5e9fc7;
@@ -324,6 +373,7 @@ h2 em {
     color: var(--navy);
     font-weight: 900
 }
+
 .round-arrow svg {
     width: 18px;
     height: 18px;
@@ -1821,6 +1871,7 @@ h2 em {
     }
 
 }
+
 @media (max-width: 700px) {
     .main-nav {
         padding-left: 36px;
@@ -1891,7 +1942,9 @@ h2 em {
 
 }
 
-.hero-social { align-items: flex-end; }
+.hero-social {
+    align-items: flex-end;
+}
 
 .hero-social a.hero-powered {
     width: auto;
@@ -1905,7 +1958,9 @@ h2 em {
 }
 
 @media (max-width: 700px) {
-    .hero-social { align-items: center; }
+    .hero-social {
+        align-items: center;
+    }
 }
 
 /* Sezione sponsor in fondo alla home */
