@@ -242,3 +242,15 @@
     justify-content: center;
     padding-block: 5px;
 }
+/* Sposta il riquadro grigio in alto su mobile */
+@media (max-width: 768px) {
+    .page-top .two-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-top .form-placeholder {
+        order: -1;
+        width: 100%;
+    }
+}
