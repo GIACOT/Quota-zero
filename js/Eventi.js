@@ -10,7 +10,7 @@
         'soldout': 'Sold out',
         'iscrizioni-aperte': 'Iscrizioni aperte',
         'prossimamente': 'Prossimamente',
-        'venerdi': 'Da Venerdì'
+        'venerdi': 'Da Giovedì'
     };
 
     // Data di oggi nel formato AAAA-MM-GG, per capire quali eventi sono passati
